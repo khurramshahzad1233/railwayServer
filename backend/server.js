@@ -5,8 +5,8 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
     dotenv.config({path:"backend/config.env"})
 };
 
-const port=process.env.port || 1234
+const port=1234 || process.env.port
 
-app.listen(process.env.port,()=>{
-    console.log(`server is running on port ${process.env.port}`)
+app.listen(port,()=>{
+    console.log(`server is running on port ${port}`)
 })
