@@ -1,6 +1,8 @@
 import catchasyncerror from "../middleware/catchasyncerror.js";
 import Errorhandler from "../utils/errorhandler.js"
 import dotenv from "dotenv"
+import fetch from "node-fetch";
+
 if(process.env.NODE_ENV!=="PRODUCTION"){
     dotenv.config({path:"backend/config.env"})
 };
