@@ -7,6 +7,6 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 const port=process.env.port || 1234
 
-app.listen(port,"0.0.0.0",()=>{
-    console.log(`server is running on port ${port}`)
+app.listen(PORT,"0.0.0.0",()=>{
+    console.log(`server is running on port ${PORT}`)
 })
